@@ -1,7 +1,19 @@
-const places = [
-	{name: 'Fairview', city: 'Montpellier', location: {lt: '10', lg: '100'}},
-	{name: 'La Panacée', city: 'Montpellier'},
-	{name: 'L\'Heure bleue', city: 'Montpellier'},
-	{name: 'La Mezzanine', city: 'Montpellier'},
-	{name: 'Le Café Bun', city: 'Montpellier'}
-]
+class World {
+	find(name) {
+		return this.collection().filter(place => place.name === name)
+	}
+	findCity(city) {
+		if (! city) {
+			return this.collection()
+		}
+		return this.collection().filter(place => place.city === city)
+	}
+	new(place) {
+		const places = this.collection()
+		places.push(place)
+		localStorage.setItem('places', JSON.stringify(places))
+	}
+	collection() {
+		return JSON.parse(localStorage.getItem('places'))
+	}
+}
