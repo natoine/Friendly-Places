@@ -9,11 +9,9 @@
 	<body>
 		<h1>Liste des Friendly Places</h1>
 		<ul>
-			<li><a href="https://www.google.com/maps/place/Mezzanine/@43.6117398,3.8767571,17z/data=!3m1!4b1!4m5!3m4!1s0x12b6af09b983756f:0x151c1a1fe522eae7!8m2!3d43.6117398!4d3.8789458">La Panacée </a> - Montpellier</li>  
-			<li><a href="https://www.google.com/maps/place/Fairview+Coffee/@43.6069957,3.87536,17z/data=!3m1!4b1!4m5!3m4!1s0x12b6afa644ad0bc5:0x98ec494b545b4bb2!8m2!3d43.6069957!4d3.8775487">Fairview Coffee</a> - Montpellier</li>
-			<li><a href="https://www.google.com/maps/place/L'Heure+Bleue/@43.6116937,3.8762665,17z/data=!3m1!4b1!4m5!3m4!1s0x12b6af084cbca8c9:0x4f6cea9d50687ece!8m2!3d43.6116937!4d3.8784552">L'heure bleue</a> - Montpellier</li>
-			<li><a href="https://www.google.com/maps/place/Mezzanine/@43.6117437,3.8767571,17z/data=!3m1!4b1!4m5!3m4!1s0x12b6af09b983756f:0x151c1a1fe522eae7!8m2!3d43.6117398!4d3.8789458">La Mezzanine</a> - Montpellier</li>
-			<li>Le Café Bun</li>
+			<script type="text/javascript">
+				places.map(place => document.write(`<li><a href="https://www.google.com/maps/@${place.location.lt},${place.location.lg},17z">${place.name}</a> - ${place.city}</li>`))
+			</script>
 		</ul>
 	</body>
 </html>
