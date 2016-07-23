@@ -14,6 +14,6 @@ class World {
 		localStorage.setItem('places', JSON.stringify(places))
 	}
 	collection() {
-		return JSON.parse(localStorage.getItem('places'))
+		return JSON.parse(localStorage.getItem('places')) || []
 	}
 }
