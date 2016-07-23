@@ -1,4 +1,4 @@
-const generatePlace = () => {
+const generatePlaces = () => {
 	const places = [
 		{name: 'Fairview', city: 'Montpellier', location: {lt: '43.6117398', lg: '3.8767571'}},
 		{name: 'La Panacée', city: 'Montpellier', location: {lt: '43.6069957', lg: '3.87536'}},
