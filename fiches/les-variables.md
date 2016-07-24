@@ -1,7 +1,7 @@
 ---
 title: Les bases de JavaScript
 description: Petite présentation des variables, de la console et des opérateurs.
-image_url: https://github.com/Amanda-Martinez/Friendly-Places/blob/master/fiches/img/variable.jpg?raw=true
+image_url: https://github.com/Amanda-Martinez/Friendly-Places/blob/master/fiches/img/variables.jpg?raw=true
 ---
 # Les bases de JavaScript
 
