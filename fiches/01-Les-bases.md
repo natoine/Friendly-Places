@@ -58,6 +58,26 @@ L'opérateur = permet d'assigner une valeur à un label.
 >> pi = 3.14
 ```
 
-Nous venons de créer une variable *pi* en lui assignant la valeur *3.14*. Pour séparer la partie entière de la partie décimale on utilise le point.
+Nous venons de créer une variable *pi* en lui assignant la valeur *3.14*.
 
+```javascript
+>> pi
+```
 
+Pour séparer la partie entière de la partie décimale on utilise le point.
+
+Pour le moment, sans rentrer dans l’explication, lorsque nous effectuerons un assignement nous utiliserons le mot clé *const* avant le label.
+
+```javascript
+>> const pi = 3.14
+```
+
+Juste une petite chose à savoir, vous ne pouvez pas réassigner une autre valeur à un même label lorsque vous utilisez *const*
+
+```javascript
+>> const pi = 3.14
+>> const pi = 3.141
+x SyntaxError: redeclaration of const odd
+```
+
+Si vous êtes sur la console de votre navigateur vous devrez par exemple recharger votre page pour pouvoir faire vos gammes autour des exemples que nous proposerons.
